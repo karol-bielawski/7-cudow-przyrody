@@ -13,7 +13,10 @@
 <body>
     <div class="container">
         <header>
+            <a href="javascript:void(0)" class="menu-toggle" onclick="openNav()">&#9776;</a>
+            
             <nav class="menu">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
                 <h2>Nawigacja</h2>
                 <ul>
                     <li><a href="../index.html">Strona główna</a></li>
@@ -42,7 +45,7 @@
                         <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail" required>
                     </div>
                     <div class="form-group">
-                        <label for="favorite">Ulubiony cud natury:</label>
+                        <label for="favorite">Ulubiony cud przyrody:</label>
                         <select id="favorite" name="favorite">
                             <option value="grandcanyon">Wielki Kanion</option>
                             <option value="paricutin">Wulkan Paricutín</option>
@@ -61,8 +64,9 @@
                         <label for="feedback">Twoja opinia:</label>
                         <textarea id="feedback" name="feedback" rows="5" placeholder="Podziel się swoją opinią..."></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-buttons">
                         <input type="submit" value="Wyślij">
+                        <input type="reset" value="Wyczyść">
                     </div>
                 </form>
             </div>
@@ -71,5 +75,6 @@
     <footer>
         <p>Karol Bielawski 2ta</p>
     </footer>
+    <script src="../sidebar.js"></script>
 </body>
 </html>

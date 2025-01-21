@@ -21,7 +21,7 @@ h2.big {
 
 
 header {
-    transition: 0.3s;
+    transition: width 0.3s;
     background-color: #4CAF50;
     color: white;
     padding: 20px;
@@ -327,6 +327,7 @@ footer {
     }
     header {
         padding: 2rem;
+
     }
     .close-btn {
         display: none;
@@ -374,7 +375,6 @@ footer {
         display: none;
         justify-content: center;
         width: auto;
-        transition: 0.3s;
         overflow-x: hidden;
     }   
 

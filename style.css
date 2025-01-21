@@ -326,7 +326,8 @@ footer {
         width: auto;
     }
     header {
-        padding: 2rem;
+        padding: 25px;
+        max-width: 100vw;
 
     }
     .close-btn {

@@ -46,7 +46,9 @@ window.addEventListener("resize", adjustMenuOnResize);
 window.addEventListener("load", adjustMenuOnResize);
 
 document.querySelectorAll(".menu ul li a").forEach(link => {
-    link.addEventListener("click", () => {
-        closeNav();
+    link.addEventListener("click", (e) => {
+        if (!link.getAttribute("href").startsWith("#")) {
+            closeNav();
+        }
     });
 });
